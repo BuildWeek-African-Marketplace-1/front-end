@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif !important;
+}
+
+p,
+a {
+  font-family: "Muli", sans-serif !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #068460;
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Dashboard-block {
+  background-color: rgb(228, 241, 245);
+  width: 75%;
+  margin: 2% 12.5%;
+  padding: 3% 0;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.ExColors {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1% 20%;
+}
+
+#root > div > div > form > button.ui.secondary.button > a {
+  color: white;
+}
+
+.ui .form {
+  width: 75% !important;
+  margin: 5% 12.5% !important;
+}
+
+#root > div > div > h2 {
+  margin-top: 5% !important;
+}
+
+.ui.text.container {
+  background-color: rgb(232, 241, 243) !important;
+  padding: 0.5% 0;
+  margin-top: 3% !important;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+/*Header*/
+
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* padding: 5px; */
+  background-color: #068460;
+  position: sticky;
+}
+
+.top-nav,
+.bottom-nav {
+  width: 100%;
+  margin-top: 1%;
+  color: white;
+  padding: 5px;
+}
+
+.logo-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-container {
+  width: 30%;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.nav-container a {
+  color: white;
+  font-family: Raleway;
+  font-size: 1.3rem;
+}
+
+/* ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 18px;
+  color: white;
+  text-align: right;
+  align-content: center;
+  font-family: 'Raleway';
+  font-weight: 1000;
+  margin-top: 10px;
+} */
+
+li a,
+li a:hover {
+  color: white;
+}
+
+#root > div > nav > div {
+  margin: 0;
+}
+
+#root > div > nav > div > ul {
+  padding: 0;
+  margin: 0.5% 0;
+}
+
+/* Product */
+
+.products-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.item-browser {
+  width: 30%;
+  justify-self: flex-end;
+  height: 100vh;
+  font-size: 20px;
+}
+
+.listed-items-container {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.listed-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 73%;
+  align-self: center;
+  margin: auto;
+}
+
+.picky__dropdown {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  box-shadow: 5px;
+  /* justify-content: space-around; */
+}
+
+input[type="checkbox"] {
+  zoom: 2;
+  margin-right: 2%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  height: 360px;
+  margin: 25px 5px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 1px grey, -5px -5px 30px 7px white;
+}
+
+.product img {
+  width: 85%;
+  height: 60%;
+  background-color: transparent;
+}
+
+.product .price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #068460;
+}
+
+.picky__placeholder {
+  color: red;
+  display: none;
+}
+
+.option {
+  display: flex;
+}
+
+.option #text {
+  color: red;
+}
+
+/* Sell page */
+
+.SellTop {
+  margin: 2% 0;
+}
+
+/* Card things */
+#root > div > div > div.ui.centered.cards > div > div.BtnCards > button {
+  width: 50% !important;
+  margin: 0 !important;
+}
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.BtnCards
+  > button:nth-child(2n-1) {
+  background: rgb(148, 210, 229);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.BtnCards
+  > button:nth-child(2n) {
+  background: rgb(231, 81, 81);
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}

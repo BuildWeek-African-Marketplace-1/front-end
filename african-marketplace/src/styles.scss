@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif !important;
+}
+
+p,
+a {
+  font-family: "Muli", sans-serif !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #068460;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Dashboard-block {
+  background-color: rgb(228, 241, 245);
+  width: 75%;
+  margin: 2% 12.5%;
+  padding: 3% 0;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.ExColors {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1% 20%;
+}
+
+#root > div > div > form > button.ui.secondary.button > a {
+  color: white;
+}
+
+.ui .form {
+  width: 75% !important;
+  margin: 5% 12.5% !important;
+}
+
+#root > div > div > h2 {
+  margin-top: 5% !important;
+}
+
+.ui.text.container {
+  background-color: rgb(232, 241, 243) !important;
+  padding: 0.5% 0;
+  margin-top: 3% !important;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.item-browser {
+  width: 30%;
+  justify-self: flex-end;
+  height: 100vh;
+  font-size: 20px;
+}
+
+.listed-items {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picky__dropdown {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  box-shadow: 5px;
+  /* justify-content: space-around; */
+}
+
+input[type="checkbox"] {
+  zoom: 2;
+  margin-right: 2%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 350px;
+  margin: 25px 5px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 1px grey, -5px -5px 30px 7px white;
+}
+
+.product > img {
+  width: 100%;
+}
+
+.product .price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #068460;
+}
+
+/*Header*/
+.header-container,
+.Outheader-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* padding: 5px; */
+  background-color: #068460;
+  position: sticky;
+}
+
+.dark-mode__toggle {
+  margin-top: 2.5%;
+}
+
+.top-nav,
+.bottom-nav {
+  width: 100%;
+  margin-top: 1%;
+  color: white;
+  padding: 5px;
+}
+
+.logo-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-container {
+  width: 30%;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.nav-container a {
+  color: white;
+  font-family: Raleway;
+  font-size: 1.3rem;
+}
+
+.nav-container a:hover {
+  color: rgb(212, 191, 54);
+}
+
+li a,
+li a:hover {
+  color: white;
+}
+
+#root > div > nav > div {
+  margin: 0;
+}
+
+#root > div > nav > div > ul {
+  padding: 0;
+  margin: 0.5% 0;
+}
+
+.picky__placeholder {
+  color: red;
+  display: none;
+}
+
+.option {
+  display: flex;
+}
+
+.option #text {
+  color: red;
+}
+
+/*Dashboard Product List*/
+.products-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.item-browser {
+  width: 30%;
+  justify-self: flex-end;
+  height: 100vh;
+  font-size: 20px;
+}
+
+.listed-items-container {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.listed-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 73%;
+  align-self: center;
+  margin: auto;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  height: 360px;
+  margin: 25px 5px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 1px grey, -5px -5px 30px 7px white;
+}
+
+.product img {
+  width: 85%;
+  height: 60%;
+  background-color: transparent;
+}
+
+/* Sell page */
+
+.SellTop {
+  margin: 2% 0;
+}
+
+/* Card things */
+#root > div > div > div.ui.centered.cards > div > div.BtnCards > button {
+  width: 50% !important;
+  margin: 0 !important;
+}
+
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.BtnCards
+  > button:nth-child(2n-1) {
+  background: rgb(148, 210, 229);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.BtnCards
+  > button:nth-child(2n-1):hover {
+  background: rgb(165, 220, 236);
+}
+
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.BtnCards
+  > button:nth-child(2n) {
+  background: rgb(228, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.BtnCards
+  > button:nth-child(2n):hover {
+  background: rgb(238, 121, 121);
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#root
+  > div
+  > div
+  > div.ui.centered.cards
+  > div
+  > div.EditBlock
+  > form
+  > div
+  > button {
+  margin-top: 2%;
+  width: 40%;
+}
+
+// Add product component
+.AddProduct {
+  padding: 2% 0 0 0;
+}
+
+#root > div > div > div > form > div:nth-child(3) > input[type="text"] {
+  margin-bottom: 4%;
+}
+
+#root > div > div > div > form > button.ui.secondary.button > a,
+#root > div > div > div > form > div.AddBtns > button.ui.secondary.button > a,
+#root
+  > div
+  > div.ui.text.container
+  > div
+  > form
+  > div.LoginBtns
+  > button.ui.secondary.button
+  > a,
+#root
+  > div
+  > div.ui.text.container
+  > div
+  > form
+  > div.SignupBtns
+  > button.ui.secondary.button
+  > a {
+  color: white;
+}
+
+#root > div > div > div > form > div:nth-child(4) > div {
+  margin-bottom: 5%;
+}
+
+.AddBtns {
+  display: flex;
+  justify-content: space-around;
+}
+
+// Dark mode
+
+.dark-mode__toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.Outheader-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Some login/signup things
+.LoginBtns,
+.SignupBtns {
+  margin: 2% 0;
+}
+#root > div > div.ui.text.container > div > form > div > p {
+  color: red;
+  margin: 1% 0;
+}
+#root > div > div.ui.text.container > div > form > div > input {
+  border-radius: 15px;
+  padding: 1%;
+  width: 50%;
+  margin-bottom: 1%;
+}
+
+#root > div > div.Outheader-container > div.dark-mode__toggle {
+  margin-right: 2%;
+}
+#root > div > div.Outheader-container > div:nth-child(1) > a > img {
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+// DARK-MODE
+
+.dark-mode {
+  color: #fff;
+  background-color: #3b4452;
+
+  .App-header {
+    background-color: #1f2022;
+    border: none;
+  }
+
+  .header-container,
+  .Outheader-container {
+    background-color: #1f2022;
+  }
+
+  #root > div > div > div.ui.centered.cards > div > div.content,
+  .EditBlock {
+    background-color: rgb(81, 86, 95);
+  }
+
+  //NAV CONTAINER
+  .nav-container a:hover {
+    color: #fa9a3a;
+  }
+
+  // MUI OVERRIDES
+  .PrivateTabIndicator-colorPrimary-63 {
+    background-color: white !important;
+  }
+
+  .makeStyles-root-1 {
+    width: 100% !important;
+  }
+
+  .MuiTabs-flexContainer {
+    background-color: #1f2022 !important;
+  }
+
+  .MuiTab-wrapper {
+    color: white !important;
+    font-size: 0.9rem;
+    font-weight: 800 !important;
+    margin-top: 12%;
+    font-family: "Raleway";
+  }
+
+  .MuiTab-textColorPrimary.Mui-selected {
+    color: #068460 !important;
+  }
+
+  .react-swipeable-view-container,
+  .MuiTypography-body1 {
+    background-color: rgb(59, 68, 81);
+  }
+
+  //Listed Products
+  .listed-items {
+    background-color: rgb(59, 68, 81);
+  }
+
+  .product {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px 2px #fa9a3a, -5px -5px 30px 7px rgb(59, 68, 81);
+  }
+
+  .product .price {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #f68819;
+  }
+
+  #full-width-tabpanel-0 > div > div > div > div > h3,
+  #full-width-tabpanel-0 > div > div > div > div > p:nth-child(4) {
+    color: black;
+  }
+
+  .MuiButtonBase-root:focus {
+    outline: none !important;
+  }
+
+  .meta,
+  .description,
+  .ui.button,
+  #root > div > div > div > form > div > label,
+  #root > div > div > div > form > div:nth-child(4) > div > p,
+  #root > div > div > form > div > label,
+  #root > div > div > h2,
+  #root > div > div > h3 {
+    color: white !important;
+  }
+
+  .header {
+    color: #fa9a3a !important;
+  }
+
+  #root
+    > div
+    > div
+    > div.ui.centered.cards
+    > div
+    > div.BtnCards
+    > button:nth-child(2n-1) {
+    background: #f68819;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  #root
+    > div
+    > div
+    > div.ui.centered.cards
+    > div
+    > div.BtnCards
+    > button:nth-child(2n-1):hover {
+    background: #fa9a3a;
+  }
+
+  #root
+    > div
+    > div
+    > div.ui.centered.cards
+    > div
+    > div.BtnCards
+    > button:nth-child(2n) {
+    background: rgb(228, 115, 115);
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  #root
+    > div
+    > div
+    > div.ui.centered.cards
+    > div
+    > div.BtnCards
+    > button:nth-child(2n):hover {
+    background: rgb(238, 121, 121);
+  }
+
+  #root
+    > div
+    > div
+    > div.ui.centered.cards
+    > div
+    > div.EditBlock
+    > form
+    > div
+    > button,
+  #root > div > div > div > form > div.AddBtns > button.ui.primary.button,
+  #root > div > div > div.SellTop > button.ui.primary.button,
+  #root > div > div > form > button.ui.primary.button,
+  #root
+    > div
+    > div.ui.text.container
+    > div
+    > form
+    > div.LoginBtns
+    > button.ui.primary.button,
+  #root
+    > div
+    > div.ui.text.container
+    > div
+    > form
+    > div.SignupBtns
+    > button.ui.primary.button {
+    background: rgb(171, 81, 223);
+  }
+
+  .AddProduct,
+  .ui.text.container {
+    background-color: #51565f !important;
+  }
+
+  #root > div > div > div > form > div:nth-child(4) > div {
+    background-color: #1f2022;
+    box-shadow: none;
+  }
+
+  .AddProduct {
+    border-radius: 15px;
+  }
+}
+
+//MEDUA QUERIES
+$breakpoint-mobile: 768px;
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dark-mode__toggle,
+  .logo-container,
+  .nav-container {
+    align-self: center;
+  }
+
+  .nav-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .listed-items {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+  }
+
+  .listed-items-container {
+    width: 100%;
+  }
+
+  .product {
+    width: 65%;
+    margin: 10px auto 10px auto;
+  }
+
+  .MuiTabs-flexContainer {
+    overflow-x: scroll !important;
+    background-color: #068460 !important;
+  }
+
+  .MuiTab-wrapper {
+    font-size: 0.75rem !important;
+  }
+
+  // Login things
+  #root > div > div.Outheader-container > div.dark-mode__toggle {
+    margin-right: 2%;
+  }
+  #root > div > div.Outheader-container > div:nth-child(1) > a > img {
+    margin-left: 4%;
+    margin-bottom: 5%;
+  }
+}
+
+$breakpoint-tablet: 1372px;
+
+@media screen and (max-width: $breakpoint-tablet) and (min-width: 769px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dark-mode__toggle,
+  .logo-container,
+  .nav-container {
+    align-self: center;
+  }
+
+  .nav-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .listed-items {
+    display: flex;
+    // flex-direction: column;
+    background-color: red;
+    width: 100%;
+  }
+
+  .listed-items-container {
+    width: 100%;
+  }
+
+  .product {
+    width: 35%;
+    margin: 10px auto 10px auto;
+  }
+
+  .logo-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dark-mode__toggle {
+    margin: 0 auto;
+  }
+
+  .logo-container img {
+    margin: 0 45px;
+  }
+
+  .MuiTabs-flexContainer {
+    overflow-x: scroll !important;
+    background-color: #068460 !important;
+  }
+
+  .MuiTab-wrapper {
+    font-size: 0.75rem !important;
+  }
+
+  // Login things
+  #root > div > div.Outheader-container > div.dark-mode__toggle {
+    margin-right: 2%;
+  }
+  #root > div > div.Outheader-container > div:nth-child(1) > a > img {
+    margin-left: 4%;
+    margin-bottom: 5%;
+  }
+}
